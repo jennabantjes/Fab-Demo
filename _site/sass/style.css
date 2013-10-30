@@ -56,7 +56,6 @@ table {
   width: 100%; }
 
 .col {
-  background: #f2f2f2;
   float: left; }
 
 .one-of-twelve {
@@ -127,6 +126,8 @@ html {
   height: 100%; }
 
 body {
+  font-family: "Helvetica Neue",Helvetica,Arial,Geneva,sans-serif;
+  font-size: 14px;
   height: 100%;
   overflow: scroll; }
 
@@ -161,7 +162,20 @@ a {
   width: 100%; }
 
 .subnav {
-  height: 100%; }
+  background: #f4f4f4;
+  color: #444;
+  font-size: 11px;
+  line-height: 13px;
+  height: 100%;
+  margin-bottom: 0;
+  text-transform: uppercase; }
+  .subnav h2 {
+    font-weight: 600; }
+  .subnav li {
+    padding: 3px; }
+  .subnav ul {
+    border-bottom: 1px solid #d5d5d5;
+    padding: 5px; }
 
 #image-rotator {
   height: 550px; }
@@ -173,3 +187,9 @@ a {
   display: block;
   width: 100%;
   height: auto; }
+
+.main-rotator {
+  float: left;
+  top: 0; }
+  .main-rotator img {
+    width: 100%; }
