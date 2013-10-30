@@ -139,6 +139,7 @@ body {
 .container {
   height: 100%;
   margin: 0 auto;
+  position: relative;
   width: 980px; }
 
 section {
@@ -157,9 +158,50 @@ a {
 
 .contact {
   background: #e4e6e5;
+  font-size: 12px;
+  line-height: 16px;
   height: 28px;
+  margin-bottom: 1rem;
   min-width: 980px;
   width: 100%; }
+
+header {
+  background: white;
+  display: block;
+  height: 97px;
+  padding-bottom: 10px;
+  z-index: 101; }
+
+#top-nav {
+  border-bottom: 1px solid #d5d5d5;
+  color: #333;
+  font-size: 14px;
+  height: 26px;
+  padding-bottom: 10px; }
+  #top-nav li {
+    border-left: 1px solid #d5d5d5;
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    padding: 0 16px; }
+    #top-nav li:first-child {
+      border-left: none;
+      padding-left: 0; }
+
+.searchbar {
+  border-radius: 2px;
+  background: white;
+  border: 1px solid #b6b8b7;
+  color: #666;
+  font-size: 14px;
+  height: 38px;
+  padding: 0 0 0 36px;
+  margin: 0;
+  width: 80%; }
+
+select, input, textarea, button {
+  font: 99% "Helvetica Neue",Helvetica,Arial,sans-serif;
+  outline: 0; }
 
 .subnav {
   background: #f4f4f4;
@@ -190,6 +232,6 @@ a {
 
 .main-rotator {
   float: left;
-  top: 0; }
+  padding: 0; }
   .main-rotator img {
     width: 100%; }
