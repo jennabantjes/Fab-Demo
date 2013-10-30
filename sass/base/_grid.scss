@@ -6,7 +6,6 @@
 
 .col {
     background: #f2f2f2;
-    height: 100px;
     float: left;
 }
 
@@ -24,6 +23,11 @@
     &:last-child {
         margin-right: 0;
     }
+}
+
+.one-of-five {
+    margin: 0 2% 2% 0;
+    width: 17.5%;
 }
 
 .one-of-four {

@@ -24,7 +24,7 @@ body {
 section {
     clear: both;
     margin: 0 0 2rem 0;
-    padding: 1rem 0;
+    padding: .5rem 0;
     overflow: hidden;
 }
 
@@ -61,4 +61,13 @@ a {
 
 #image-rotator {
     height: 550px;
+}
+
+.owl-carousel .item{
+  margin: 3px;
+}
+.owl-carousel .item img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
