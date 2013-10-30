@@ -78,6 +78,10 @@ table {
   margin: 0 2% 2% 0;
   width: 17.5%; }
 
+.three-of-five {
+  margin: 0 2% 2% 0;
+  width: 52.5%; }
+
 .one-of-four {
   margin: 0 2% 2% 0;
   /* 15px/1000px */
@@ -187,6 +191,9 @@ header {
     #top-nav li:first-child {
       border-left: none;
       padding-left: 0; }
+  #top-nav .sale a {
+    color: #dd0017;
+    font-weight: 500; }
 
 .searchbar {
   border-radius: 2px;
