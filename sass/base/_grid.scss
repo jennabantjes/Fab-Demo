@@ -57,6 +57,15 @@
     &:last-child {
         margin-right: 0;
     }
+    // Switch to 100% at 740px
+
+    @media (max-width: 740px) {
+        min-height: 150px;
+    }
+
+    @media (max-width: 635px) {
+        width: 98%;
+    }
 }
 
 .two-of-three {

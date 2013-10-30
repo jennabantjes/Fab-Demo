@@ -21,7 +21,8 @@ body {
     height: 100%;
     margin: 0 auto;
     position: relative;
-    width: 980px;
+    max-width: 980px;
+    min-width: 320px;
 }
 
 section {
@@ -163,6 +164,7 @@ select, input, textarea, button {
 .products {
     font-size: 20px;
     line-height: 3;
+    padding: 1rem;
 
     a {
         color: #dd0017;

@@ -105,6 +105,12 @@ table {
   /* .one-of-twelve width*4 */ }
   .one-of-three:last-child, .two-of-six:last-child {
     margin-right: 0; }
+  @media (max-width: 740px) {
+    .one-of-three, .two-of-six {
+      min-height: 150px; } }
+  @media (max-width: 635px) {
+    .one-of-three, .two-of-six {
+      width: 98%; } }
 
 .two-of-three {
   margin: 0 2% 2% 0;
@@ -144,7 +150,8 @@ body {
   height: 100%;
   margin: 0 auto;
   position: relative;
-  width: 980px; }
+  max-width: 980px;
+  min-width: 320px; }
 
 section {
   clear: both;
@@ -246,7 +253,8 @@ select, input, textarea, button {
 
 .products {
   font-size: 20px;
-  line-height: 3; }
+  line-height: 3;
+  padding: 1rem; }
   .products a {
     color: #dd0017; }
 
