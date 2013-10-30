@@ -222,8 +222,8 @@ select, input, textarea, button {
 #image-rotator {
   height: 550px; }
 
-.owl-carousel .item {
-  margin: 3px; }
+.owl-carousel {
+  border-bottom: 1px solid #d5d5d5; }
 
 .owl-carousel .item img {
   display: block;
@@ -231,7 +231,71 @@ select, input, textarea, button {
   height: auto; }
 
 .main-rotator {
+  border-bottom: none;
   float: left;
   padding: 0; }
   .main-rotator img {
     width: 100%; }
+
+.products {
+  font-size: 20px;
+  line-height: 3; }
+  .products a {
+    color: #dd0017; }
+
+.item-info {
+  border-top: 1px solid #cfcfcf;
+  line-height: 1.4;
+  margin: 1.2rem .6rem .6rem .6rem;
+  min-height: 80px;
+  padding: 1rem .6rem; }
+  .item-info:hover {
+    background: #f7f7f7;
+    border-color: #f7f7f7; }
+  .item-info span {
+    width: 100%; }
+
+.item {
+  display: block;
+  font-size: 12px;
+  font-weight: 500; }
+
+.vendor {
+  display: block;
+  font-weight: 300; }
+  .vendor a {
+    font-weight: 500; }
+
+.sale-price {
+  display: block;
+  font-size: 14px;
+  font-weight: bold; }
+
+.price {
+  color: #999;
+  display: block;
+  font-size: 12px;
+  text-decoration: line-through; }
+
+.policies div {
+  background: #f2f2f2;
+  color: black;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 14px 5px;
+  min-height: 115px;
+  padding: 15px; }
+  .policies div:first-child:hover {
+    background: #64d2f1; }
+  .policies div:hover {
+    background: #e59ac2;
+    color: white; }
+    .policies div:hover p {
+      color: white; }
+  .policies div:last-child:hover {
+    background: #ff5800; }
+  .policies div p {
+    color: #999;
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 12px; }
