@@ -45,6 +45,7 @@ p {
 }
 
 a {
+    color: #666;
     text-decoration: none;
 
     &:hover {
@@ -52,22 +53,44 @@ a {
     }
 }
 
-.contact {
+.meta {
     background: #e4e6e5;
+    color: #666;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 18px;
     height: 28px;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     min-width: 980px;
     width: 100%;
+
+    a:hover {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .icon-mail-1 {
+        margin: 0 5px 0 10px;
+    }
+
+    .one-of-four {
+        text-align: right;
+    }
+
+    .contact {
+        text-align: right;
+    }
 }
 
 header {
     background: white;
     display: block;
-    height: 97px;
-    padding-bottom: 10px;
+    height: 60px;
+    margin-bottom: 12px;
     z-index: 101;
+}
+
+#logo {
+    margin: 12px 15px 0 0;
 }
 
 #top-nav {
@@ -91,7 +114,7 @@ header {
     }
 
     .sale a {
-        color: #dd0017;
+        color: $red;
         font-weight: 500;
     }
 }
@@ -104,8 +127,16 @@ header {
     font-size: 14px;
     height: 38px;
     padding: 0 0 0 36px;
-    margin: 0;
-    width: 80%;
+    margin-top: 12px;
+    width: 100%;
+
+    &:before {
+        content: '\e805';
+        font-family: 'fontello';
+
+
+
+    }
 }
 
 select, input, textarea, button {
@@ -113,7 +144,27 @@ select, input, textarea, button {
     outline: 0;
 }
 
-.subnav {
+.cart {
+    border-right: 1px solid #d5d5d5;
+    padding-right: 12px;
+}
+
+.login {
+    margin-left: 12px;
+}
+
+#shop{
+    margin-top: 24px;
+    text-align: right;
+}
+
+#rotator {
+    margin: 12px 0;
+    padding: 0;
+    position: relative;
+}
+
+.sidebar {
     background: #f4f4f4;
     color: #444;
     font-size: 11px;
@@ -123,7 +174,17 @@ select, input, textarea, button {
     text-transform: uppercase;
 
     h2{
+        color: #444;
         font-weight: 600;
+    }
+
+    a {
+        color: #999;
+
+        &:hover {
+            color: $red;
+            text-decoration: none;
+        }
     }
 
     li {
@@ -167,7 +228,7 @@ select, input, textarea, button {
     padding: 1rem;
 
     a {
-        color: #dd0017;
+        color: $red;
     }
 }
 

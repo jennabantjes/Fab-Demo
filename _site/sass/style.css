@@ -92,7 +92,7 @@ table {
 
 .three-of-four, .nine-of-twelve {
   margin: 0 2% 2% 0;
-  width: 70.5%;
+  width: 73.5%;
   /* .one-of-four width * 3 */ }
   .three-of-four:last-child, .nine-of-twelve:last-child {
     margin-right: 0;
@@ -163,25 +163,39 @@ h1 {
   font-size: 24px; }
 
 a {
+  color: #666;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
 
-.contact {
+.meta {
   background: #e4e6e5;
+  color: #666;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 18px;
   height: 28px;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   min-width: 980px;
   width: 100%; }
+  .meta a:hover {
+    color: #333;
+    text-decoration: none; }
+  .meta .icon-mail-1 {
+    margin: 0 5px 0 10px; }
+  .meta .one-of-four {
+    text-align: right; }
+  .meta .contact {
+    text-align: right; }
 
 header {
   background: white;
   display: block;
-  height: 97px;
-  padding-bottom: 10px;
+  height: 60px;
+  margin-bottom: 12px;
   z-index: 101; }
+
+#logo {
+  margin: 12px 15px 0 0; }
 
 #top-nav {
   border-bottom: 1px solid #d5d5d5;
@@ -210,14 +224,33 @@ header {
   font-size: 14px;
   height: 38px;
   padding: 0 0 0 36px;
-  margin: 0;
-  width: 80%; }
+  margin-top: 12px;
+  width: 100%; }
+  .searchbar:before {
+    content: '\e805';
+    font-family: 'fontello'; }
 
 select, input, textarea, button {
   font: 99% "Helvetica Neue",Helvetica,Arial,sans-serif;
   outline: 0; }
 
-.subnav {
+.cart {
+  border-right: 1px solid #d5d5d5;
+  padding-right: 12px; }
+
+.login {
+  margin-left: 12px; }
+
+#shop {
+  margin-top: 24px;
+  text-align: right; }
+
+#rotator {
+  margin: 12px 0;
+  padding: 0;
+  position: relative; }
+
+.sidebar {
   background: #f4f4f4;
   color: #444;
   font-size: 11px;
@@ -225,11 +258,17 @@ select, input, textarea, button {
   height: 100%;
   margin-bottom: 0;
   text-transform: uppercase; }
-  .subnav h2 {
+  .sidebar h2 {
+    color: #444;
     font-weight: 600; }
-  .subnav li {
+  .sidebar a {
+    color: #999; }
+    .sidebar a:hover {
+      color: #dd0017;
+      text-decoration: none; }
+  .sidebar li {
     padding: 3px; }
-  .subnav ul {
+  .sidebar ul {
     border-bottom: 1px solid #d5d5d5;
     padding: 5px; }
 
