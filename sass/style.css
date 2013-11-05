@@ -219,14 +219,15 @@ header {
   color: #333;
   font-size: 14px;
   height: 26px;
-  padding-bottom: 10px; }
-  #top-nav li {
+  padding-bottom: 10px;
+  position: relative; }
+  #top-nav ul > li {
     border-left: 1px solid #d5d5d5;
     cursor: pointer;
     float: left;
     height: 16px;
     padding: 0 16px; }
-    #top-nav li:first-child {
+    #top-nav ul > li:first-child {
       border-left: none;
       padding-left: 0; }
   #top-nav .sale a {
@@ -241,6 +242,7 @@ header {
   opacity: 0;
   padding: 12px 11px 12px 0;
   position: absolute;
+  top: 25px;
   width: 100%;
   z-index: 12; }
   .popup-nav.visible {
@@ -286,7 +288,8 @@ header {
     color: #333;
     font-size: 12px;
     font-weight: 400;
-    padding: 6px 0 6px 14px; }
+    padding: 6px 0 6px 14px;
+    width: 100%; }
     .popup-nav li:hover {
       background: #f7f7f7;
       color: #666; }
