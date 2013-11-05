@@ -23,12 +23,22 @@ $(document).ready(function() {
 
   });
 
-    $('body').on('mouseover', '#women', function(){
-      $('.popup-nav').addClass('visible');
-      $('body').on('click', function(){
-        $('.popup-nav').removeClass('visible');
-        console.log('clicking');
-      });
+  var revealNav = function(navId){
+    $('body').on('mouseover', navId, function(){
+
+      console.log(navId);
+      $('.popup-nav').removeClass('visible');
+      $(navId+'-nav').addClass('visible');
+
     });
 
+    $('body').on('click', function(){
+
+      $('.popup-nav').removeClass('visible');
+
+    });
+  };
+
+  revealNav('#women');
+  //revealNav('#men');
 });

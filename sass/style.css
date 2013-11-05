@@ -147,6 +147,7 @@ body {
   overflow: scroll; }
 
 .page-wrapper {
+  padding: 0 12px;
   position: relative;
   width: 100%;
   height: 100%; }
@@ -154,6 +155,7 @@ body {
 .container {
   height: 100%;
   margin: 0 auto;
+  padding: 0 12px;
   position: relative;
   max-width: 980px;
   min-width: 320px; }
@@ -341,6 +343,11 @@ select, input, textarea, button {
   .sidebar ul {
     border-bottom: 1px solid #d5d5d5;
     padding: 5px; }
+  @media screen and (max-width: 900px) {
+    .sidebar {
+      left: -9999px;
+      position: absolute;
+      top: -9999px; } }
 
 #image-rotator {
   height: 550px; }
@@ -359,6 +366,9 @@ select, input, textarea, button {
   padding: 0; }
   .main-rotator img {
     width: 100%; }
+  @media screen and (max-width: 900px) {
+    .main-rotator.three-of-four {
+      width: 100%; } }
 
 .products {
   font-size: 20px;
