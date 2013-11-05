@@ -131,6 +131,9 @@ table {
   /* .one-of-twelve width*6 */ }
   .one-of-two:last-child, .three-of-six:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 530px) {
+    .one-of-two, .three-of-six {
+      width: 100%; } }
 
 .one-of-one {
   width: 100%; }
@@ -182,8 +185,12 @@ a {
   line-height: 18px;
   height: 28px;
   margin-bottom: 0;
-  min-width: 980px;
   width: 100%; }
+  @media screen and (max-width: 530px) {
+    .meta {
+      height: auto;
+      font-size: inherit;
+      text-align: center; } }
   .meta a:hover {
     color: #333;
     text-decoration: none; }
@@ -193,6 +200,9 @@ a {
     text-align: right; }
   .meta .contact {
     text-align: right; }
+    @media screen and (max-width: 530px) {
+      .meta .contact {
+        text-align: center; } }
 
 header {
   background: white;
