@@ -245,6 +245,10 @@ header {
   top: 25px;
   width: 100%;
   z-index: 12; }
+  @media screen and (max-width: 750px) {
+    .popup-nav {
+      padding: 12px 0 0 0;
+      width: 95%; } }
   .popup-nav.visible {
     opacity: 1; }
   .popup-nav:before {
@@ -258,6 +262,25 @@ header {
     top: -19px; }
   .popup-nav .one-of-four {
     margin: 0; }
+    @media screen and (max-width: 750px) {
+      .popup-nav .one-of-four:nth-child(2) {
+        margin-bottom: 30px; } }
+    @media screen and (max-width: 500px) {
+      .popup-nav .one-of-four:nth-child(2) {
+        margin-bottom: 0; } }
+    @media screen and (max-width: 750px) {
+      .popup-nav .one-of-four:nth-child(3), .popup-nav .one-of-four:first-child {
+        border-right: 1px solid #b6b8b7; } }
+    @media screen and (max-width: 500px) {
+      .popup-nav .one-of-four:nth-child(3), .popup-nav .one-of-four:first-child {
+        border-right: 0; } }
+    @media screen and (max-width: 750px) {
+      .popup-nav .one-of-four {
+        display: block;
+        width: 50%; } }
+    @media screen and (max-width: 500px) {
+      .popup-nav .one-of-four {
+        width: 100%; } }
   .popup-nav .shop-all-women {
     float: right;
     font-size: 12px;
@@ -274,14 +297,25 @@ header {
   .popup-nav .menu-image {
     padding-left: 12px;
     width: 29%; }
+    @media screen and (max-width: 750px) {
+      .popup-nav .menu-image {
+        padding: 0 12px;
+        width: 50%; } }
+    @media screen and (max-width: 500px) {
+      .popup-nav .menu-image {
+        padding: 0 0 12px 0;
+        width: 100%; } }
     .popup-nav .menu-image img {
       width: 100%; }
   .popup-nav ul {
     border-right: 1px solid #b6b8b7;
     padding: 12px 0; }
+    @media screen and (max-width: 750px) {
+      .popup-nav ul {
+        border-right: none;
+        border-bottom: 1px solid #b6b8b7; } }
   .popup-nav .border-bottom {
-    border-bottom: 1px solid #b6b8b7;
-    padding-top: 0; }
+    border-bottom: 1px solid #b6b8b7; }
   .popup-nav a:hover {
     text-decoration: none; }
   .popup-nav li {

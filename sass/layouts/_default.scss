@@ -146,6 +146,11 @@ header {
     width: 100%;
     z-index: 12;
 
+    @media screen and (max-width: 750px) {
+        padding: 12px 0 0 0;
+        width: 95%;
+    }
+
     &.visible {
         opacity: 1;
     }
@@ -163,6 +168,35 @@ header {
 
     .one-of-four {
         margin: 0;
+
+        &:nth-child(2){
+            @media screen and (max-width: 750px){
+                margin-bottom: 30px;
+            }
+
+            @media screen and (max-width: 500px) {
+                margin-bottom: 0;
+            }
+        }
+
+        &:nth-child(3), &:first-child {
+            @media  screen and (max-width: 750px) {
+                border-right: 1px solid #b6b8b7;
+            }
+
+            @media screen and (max-width: 500px) {
+                border-right: 0;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            display: block;
+            width: 50%;
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
     }
 
     .shop-all-women {
@@ -188,6 +222,16 @@ header {
         padding-left: 12px;
         width: 29%;
 
+        @media screen and (max-width: 750px) {
+            padding: 0 12px;
+            width: 50%;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 0 0 12px 0;
+            width: 100%;
+        }
+
         img {
             width: 100%;
         }
@@ -196,11 +240,15 @@ header {
     ul {
         border-right: 1px solid #b6b8b7;
         padding: 12px 0;
+
+        @media screen and (max-width: 750px) {
+            border-right: none;
+            border-bottom: 1px solid #b6b8b7;
+        }
     }
 
     .border-bottom {
         border-bottom: 1px solid #b6b8b7;
-        padding-top: 0;
     }
 
     a:hover {
