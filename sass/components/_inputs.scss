@@ -1,6 +1,39 @@
-input[type="search"]{
-    &:before {
-        content: '\e805';
-        font-family: 'fontello';
+#search-label {
+    position: relative;
+}
+
+.icon-search {
+    color: #666;
+    font-size: 20px;
+    left: 5px;
+    position: absolute;
+    top: 20px;
+    z-index: 111;
+}
+
+input[type="search"] {
+    border-radius: 2px;
+    background: white;
+    border: 1px solid #b6b8b7;
+    color: #666;
+    font-size: 14px;
+    height: 38px;
+    padding: 0 0 0 36px;
+    position: relative;
+    margin-top: 12px;
+
+    @media screen and (max-width: 860px) {
+        width: 109px;
+    }
+}
+
+select, input, textarea, button {
+    font: 99% "Helvetica Neue",Helvetica,Arial,sans-serif;
+    outline: 0;
+}
+
+.search {
+    @media screen and (max-width: 860px) {
+        float: right;
     }
 }

@@ -288,24 +288,6 @@ header {
       .popup-nav li.category:hover {
         color: #000; }
 
-.searchbar {
-  border-radius: 2px;
-  background: white;
-  border: 1px solid #b6b8b7;
-  color: #666;
-  font-size: 14px;
-  height: 38px;
-  padding: 0 0 0 36px;
-  margin-top: 12px;
-  width: 100%; }
-  .searchbar:before {
-    content: '\e805';
-    font-family: 'fontello'; }
-
-select, input, textarea, button {
-  font: 99% "Helvetica Neue",Helvetica,Arial,sans-serif;
-  outline: 0; }
-
 .cart {
   border-right: 1px solid #d5d5d5;
   padding-right: 12px; }
@@ -316,6 +298,10 @@ select, input, textarea, button {
 #shop {
   margin-top: 24px;
   text-align: right; }
+  @media screen and (max-width: 860px) {
+    #shop {
+      float: right;
+      margin-right: 20px; } }
 
 #rotator {
   margin: 12px 0;
@@ -433,3 +419,36 @@ select, input, textarea, button {
     font-size: 12px;
     line-height: 17px;
     margin-top: 12px; }
+
+#search-label {
+  position: relative; }
+
+.icon-search {
+  color: #666;
+  font-size: 20px;
+  left: 5px;
+  position: absolute;
+  top: 20px;
+  z-index: 111; }
+
+input[type="search"] {
+  border-radius: 2px;
+  background: white;
+  border: 1px solid #b6b8b7;
+  color: #666;
+  font-size: 14px;
+  height: 38px;
+  padding: 0 0 0 36px;
+  position: relative;
+  margin-top: 12px; }
+  @media screen and (max-width: 860px) {
+    input[type="search"] {
+      width: 109px; } }
+
+select, input, textarea, button {
+  font: 99% "Helvetica Neue",Helvetica,Arial,sans-serif;
+  outline: 0; }
+
+@media screen and (max-width: 860px) {
+  .search {
+    float: right; } }
