@@ -1,3 +1,22 @@
 .sticky {
     position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.sticky-area {
+    background:  #fff;
+    display: block;
+    @include clearfix;
+
+    &.sticky {
+        max-width: 980px;
+        width: 100%;
+    }
+}
+
+.meta {
+    &.nav-fixed {
+        margin: 0 0 98px;
+    }
 }

@@ -352,7 +352,25 @@ header {
     margin-top: 12px; }
 
 .sticky {
-  position: fixed; }
+  position: fixed;
+  top: 0;
+  z-index: 99; }
+
+.sticky-area {
+  background: #fff;
+  display: block;
+  *zoom: 1; }
+  .sticky-area:before, .sticky-area:after {
+    content: " ";
+    display: table; }
+  .sticky-area:after {
+    clear: both; }
+  .sticky-area.sticky {
+    max-width: 980px;
+    width: 100%; }
+
+.meta.nav-fixed {
+  margin: 0 0 98px; }
 
 #search-label {
   position: relative; }

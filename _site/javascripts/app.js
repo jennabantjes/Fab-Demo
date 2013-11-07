@@ -52,14 +52,15 @@ $(document).ready(function() {
       $('#top-nav > ul').toggleClass('visible');
     });
 
-    // $('body').on('click', 'header, section, #top-nav a', function(){
-    //   console.log('clicking off');
-    //   $('#top-nav > ul').removeClass('visible');
-    // });
+    $('body').on('click', 'header, section, #top-nav a', function(){
+      console.log('clicking off');
+      $('#top-nav > ul').removeClass('visible');
+    });
 
-    // $('.sticky-area').waypoint(function(direction) {
-    //   $(this).addClass('sticky');
-    // });
+    $('.sticky-area').waypoint(function(direction) {
+      $(this).addClass('sticky');
+      $('.meta').addClass('nav-fixed');
+    });
 
 
 
