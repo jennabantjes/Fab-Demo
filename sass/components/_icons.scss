@@ -1,7 +1,11 @@
 .icon-menu-1 {
     display: none;
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 550px) {
         display: block;
+    }
+
+    &:hover {
+        cursor: pointer;
     }
 }

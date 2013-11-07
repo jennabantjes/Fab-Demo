@@ -64,7 +64,7 @@ a {
     margin-bottom: 0;
     width: 100%;
 
-    @media screen and (max-width: 540px){
+    @media screen and (max-width: 550px){
         height: auto;
         font-size: inherit;
         text-align: center;
@@ -86,7 +86,7 @@ a {
     .contact {
         text-align: right;
 
-        @media screen and (max-width: 540px){
+        @media screen and (max-width: 550px){
             text-align: center;
         }
     }

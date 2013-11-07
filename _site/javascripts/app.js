@@ -29,6 +29,12 @@ $(document).ready(function() {
     });
 
     $('body').on('click', '.icon-menu-1', function() {
-      $('#top-nav > ul').addClass('visible');
+      console.log('clicking');
+      $('#top-nav > ul').toggleClass('visible');
+    });
+
+    $('body').on('click', 'header, section, #top-nav a', function(){
+      console.log('clicking off');
+      $('#top-nav > ul').removeClass('visible');
     });
 });

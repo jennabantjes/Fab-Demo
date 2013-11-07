@@ -5,14 +5,35 @@
     height: 26px;
     padding-bottom: 10px;
     position: relative;
-    z-index: 999;
+    z-index: 1;
 
     > ul {
 
+        &.visible {
+            @include transition(opacity 0.2s ease-in-out);
+            left: 0;
+            opacity: 1;
+            top: 25px;
+        }
+
+        @media screen and (max-width: 550px) {
+            left: -999px;
+            opacity: 0;
+            position: absolute;
+            top: -999px;
+            width: 95%;
+        }
+
+        li {
+            display: inline-block;
+
+            @media screen and (max-width: 550px) {
+                display: block;
+            }
+        }
+
         h3 {
             cursor: pointer;
-            float: left;
-            height: 16px;
             padding: 0 16px;
 
             span.icon-down-dir {
@@ -20,15 +41,16 @@
             }
         }
 
-        @media screen and (max-width: 540px) {
+        @media screen and (max-width: 550px) {
             box-shadow: 0 5px 5px -2px rgba(0,0,0,0.4);
 
             h3 {
                 background: white;
                 border: 1px solid #d5d5d5;
                 padding: 8px;
+                width: 100%;
 
-                span {
+                span.icon-down-dir {
                     display: block;
                     float: right;
                 }
@@ -39,10 +61,10 @@
                 padding: 8px;
             }
         }
-    }
+     }
 
     .sale a {
         color: $red;
         font-weight: 500;
     }
-}
+ }
