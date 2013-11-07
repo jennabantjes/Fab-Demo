@@ -179,7 +179,7 @@ a {
     text-decoration: underline; }
 
 .meta {
-  background: #e4e6e5;
+  background: #f4f4f4;
   color: #666;
   font-size: 12px;
   line-height: 18px;
@@ -245,7 +245,7 @@ header {
   top: 25px;
   width: 100%;
   z-index: 12; }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 800px) {
     .popup-nav {
       padding: 12px 0 0 0;
       width: 95%; } }
@@ -262,19 +262,19 @@ header {
     top: -19px; }
   .popup-nav .one-of-four {
     margin: 0; }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 800px) {
       .popup-nav .one-of-four:nth-child(2) {
         margin-bottom: 30px; } }
     @media screen and (max-width: 500px) {
       .popup-nav .one-of-four:nth-child(2) {
         margin-bottom: 0; } }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 800px) {
       .popup-nav .one-of-four:nth-child(3), .popup-nav .one-of-four:first-child {
         border-right: 1px solid #b6b8b7; } }
     @media screen and (max-width: 500px) {
       .popup-nav .one-of-four:nth-child(3), .popup-nav .one-of-four:first-child {
         border-right: 0; } }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 800px) {
       .popup-nav .one-of-four {
         display: block;
         width: 50%; } }
@@ -297,7 +297,7 @@ header {
   .popup-nav .menu-image {
     padding-left: 12px;
     width: 29%; }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 800px) {
       .popup-nav .menu-image {
         padding: 0 12px;
         width: 50%; } }
@@ -310,7 +310,7 @@ header {
   .popup-nav ul {
     border-right: 1px solid #b6b8b7;
     padding: 12px 0; }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 800px) {
       .popup-nav ul {
         border-right: none;
         border-bottom: 1px solid #b6b8b7; } }
@@ -477,6 +477,9 @@ header {
   position: absolute;
   top: 20px;
   z-index: 111; }
+  @media screen and (max-width: 860px) {
+    .icon-search.selected {
+      display: none; } }
 
 input[type="search"] {
   border-radius: 2px;
@@ -487,10 +490,19 @@ input[type="search"] {
   height: 38px;
   padding: 0 0 0 36px;
   position: relative;
-  margin-top: 12px; }
+  margin-top: 12px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
   @media screen and (max-width: 860px) {
     input[type="search"] {
-      width: 109px; } }
+      padding: 0 0 0 30px;
+      width: 100px; }
+      input[type="search"].selected {
+        padding: 0 5px;
+        width: 200px; } }
 
 select, input, textarea, button {
   font: 99% "Helvetica Neue",Helvetica,Arial,sans-serif;

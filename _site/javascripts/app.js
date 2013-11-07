@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+    $('#search').blur(function(){
+        $(this).removeClass("selected");
+        $('.icon-search').removeClass('selected');
+      })
+             .focus(function() {
+               $(this).addClass("selected")
+               $('.icon-search').addClass('selected');
+      });
+
   $(".owl-carousel").owlCarousel({
 
       items : 4,
