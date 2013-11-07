@@ -15,24 +15,26 @@ layout: app
 </section>
 
 <div class="container">
-	<header>
-		<div id="logo" class="one-of-four col">
-			<h1><img src="../assets/images/fab_logo.png"></h1>
-		</div>
-		<form class="search">
-			<label for="search" id="search-label">
-				<span class="icon-search"></span>
-				<input type="search" id="search" class="searchbar one-of-two col" placeholder="Search Everyday Designs for Home, Fashion and Gifts" />
-			</label>
-		</form>
+	<span class="sticky-area">
+		<header>
+			<div id="logo" class="one-of-four col">
+				<h1><img src="../assets/images/fab_logo.png"></h1>
+			</div>
+			<form class="search">
+				<label for="search" id="search-label">
+					<span class="icon-search"></span>
+					<input type="search" id="search" class="searchbar one-of-two col" placeholder="Search Everyday Designs for Home, Fashion and Gifts" />
+				</label>
+			</form>
 
-		<div id="shop" class="one-of-four col">
-			<a href="#" class="cart">Cart <span class="icon-basket"></span></a>
-			<a href="#" class="login">Login</a>
-		</div>
-	</header>
+			<div id="shop" class="one-of-four col">
+				<a href="#" class="cart">Cart <span class="icon-basket"></span></a>
+				<a href="#" class="login">Login</a>
+			</div>
+		</header>
 
-	{% include nav/_top-nav.html %}
+		{% include nav/_top-nav.html %}
+	</span>
 
 	<section id="rotator" class="row">
 		{% include _sidebar.html %}

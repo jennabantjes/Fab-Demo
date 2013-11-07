@@ -351,6 +351,9 @@ header {
     line-height: 17px;
     margin-top: 12px; }
 
+.sticky {
+  position: fixed; }
+
 #search-label {
   position: relative; }
 

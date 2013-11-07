@@ -10,7 +10,7 @@
     <link href="sass/style.css" rel="stylesheet">
 	<!-- Important Owl stylesheet -->
 	<link rel="stylesheet" href="sass/vendor/owl.carousel.css">
-	<link rel="stylesheet" href="sass/vendor/fontello.css">	
+	<link rel="stylesheet" href="sass/vendor/fontello.css">
 	<link rel="stylesheet" href="sass/vendor/owl.theme.css">
 </head>
 
@@ -29,24 +29,25 @@
 </section>
 
 <div class="container">
-	<header>
-		<div id="logo" class="one-of-four col">
-			<h1><img src="../assets/images/fab_logo.png"></h1>
-		</div>
-		<form class="search">
-			<label for="search" id="search-label">
-				<span class="icon-search"></span>
-				<input type="search" id="search" class="searchbar one-of-two col" placeholder="Search Everyday Designs for Home, Fashion and Gifts" />
-			</label>
-		</form>
+	<span class="sticky-area">
+		<header>
+			<div id="logo" class="one-of-four col">
+				<h1><img src="../assets/images/fab_logo.png"></h1>
+			</div>
+			<form class="search">
+				<label for="search" id="search-label">
+					<span class="icon-search"></span>
+					<input type="search" id="search" class="searchbar one-of-two col" placeholder="Search Everyday Designs for Home, Fashion and Gifts" />
+				</label>
+			</form>
 
-		<div id="shop" class="one-of-four col">
-			<a href="#" class="cart">Cart <span class="icon-basket"></span></a>
-			<a href="#" class="login">Login</a>
-		</div>
-	</header>
+			<div id="shop" class="one-of-four col">
+				<a href="#" class="cart">Cart <span class="icon-basket"></span></a>
+				<a href="#" class="login">Login</a>
+			</div>
+		</header>
 
-	    <nav id="top-nav" class="row">
+		    <nav id="top-nav" class="row">
         <span class="icon-menu-1"></span>
         <ul class="accordion">
             <li id="women">
@@ -346,6 +347,7 @@
             </li>
         </ul>
     </nav>
+	</span>
 
 	<section id="rotator" class="row">
 				<nav class="one-of-four col sidebar">
@@ -883,7 +885,11 @@
 <!-- Owl Carousel plugin -->
 <script src="javascripts/plugins/owl.carousel.js"></script>
 
+<script src="javascripts/plugins/waypoints.js"></script>
+<script src="javascripts/plugins/waypoints-sticky.min.js"></script>
+
 <script src="javascripts/app.js"></script>
+
 
 </body>
 
