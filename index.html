@@ -32,29 +32,7 @@ layout: app
 		</div>
 	</header>
 
-	<nav id="top-nav" class="row">
-		<ul>
-			<li>
-				<a href="#" id="women">Women</a>
-				{% include nav/_popupnav.html %}
-			</li>
-			<li id="men">
-				<a href="#">Men</a>
-			</li>
-			<li id="home">
-				<a href="#">Home</a>
-			</li>
-			<li id="fun">
-				<a href="#">Fun</a>
-			</li>
-			<li id="fab-only">
-				<a href="#">Only On Fab</a>
-			</li>
-			<li id="sale" class="sale">
-				<a href="#">On Sale</a>
-			</li>
-		</ul>
-	</nav>
+	{% include nav/_top-nav.html %}
 
 	<section id="rotator" class="row">
 		{% include _sidebar.html %}

@@ -27,7 +27,6 @@ input[type="search"] {
     padding: 0 0 0 36px;
     position: relative;
     margin-top: 12px;
-    @include transition(all 0.2s ease);
 
     @media screen and (max-width: 860px) {
         padding: 0 0 0 30px;
@@ -35,6 +34,7 @@ input[type="search"] {
 
         &.selected {
             padding: 0 5px;
+            @include transition(width 0.2s ease);
             width: 200px;
         }
     }

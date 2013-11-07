@@ -22,32 +22,13 @@ $(document).ready(function() {
       slideSpeed : 300,
       paginationSpeed : 400,
       singleItem:true
-
-      // "singleItem:true" is a shortcut for:
-      // items : 1,
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
-
   });
 
-  var revealNav = function(navId){
-    $('body').on('mouseover', navId, function(){
-
-      console.log(navId);
-      $('.popup-nav').removeClass('visible');
-      $(navId+'-nav').addClass('visible');
-
+    $( ".accordion" ).accordion({
+      collapsible: true
     });
 
-    $('body').on('click', function(){
-
-      $('.popup-nav').removeClass('visible');
-
+    $('body').on('click', '.icon-menu-1', function() {
+      $('#top-nav > ul').addClass('visible');
     });
-  };
-
-  revealNav('#women');
-  //revealNav('#men');
 });
