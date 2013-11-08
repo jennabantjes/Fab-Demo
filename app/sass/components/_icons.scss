@@ -1,0 +1,12 @@
+.icon-menu-1 {
+    display: none;
+
+    @media screen and (max-width: 550px) {
+        display: block;
+        line-height: 1.8;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
