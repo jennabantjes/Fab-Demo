@@ -5,14 +5,20 @@ html {
 }
 
 body {
-    content: 'largescreen';
     font-family: "Helvetica Neue",Helvetica,Arial,Geneva,sans-serif;
     font-size: 14px;
     height: 100%;
     overflow: scroll;
 
-    @media screen and (max-width: 550px) {
-        content: 'smallscreen';
+    &:before {
+            content: 'largescreen';
+            left: -9999px;
+            position: absolute;
+            top: -9999px;
+
+        @media screen and (max-width: 550px) {
+            content: 'smallscreen';
+        }
     }
 }
 

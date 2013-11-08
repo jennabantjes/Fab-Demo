@@ -2,32 +2,57 @@ var Accordion = {
 
 	init: function () {
 
-		this.activateAccordion();
+		this.checkSize();
 
-		this.closeAccordion();
+		this.triggerAccordion();
 
 	},
 
-	activateAccordion : function () {
-			$( ".accordion" ).accordion({
-			collapsible: true,
-			active: false
-		});
-	},
+		triggerAccordion : function () {
 
-	closeAccordion : function () {
+		var trigger = '.accordion-trigger',
+			content = 'accordion-content';
 
-		$('.popup-nav, #top-nav').hover( function () {
-			mouse_inside = true;
-		}, function () {
-			mouse_inside = false;
-		});
+		$(trigger).on('click',function(e) {
+			e.preventDefault();
+			console.log('clicked');
 
-		$('section, header').click( function() {
-			if (!mouse_inside) {
-					$('.accordion').accordion({active: '-1'});
+			if($(content).hasClass('is-open')) {
+
+				$(this).removeClass('is-open');
+				console.log('open');
+
 			}
-		});
+
+			else {
+
+				$(this).addClass('is-open');
+				console.log('closed');
+
+			} // if is-open
+
+		}); // click
+	},
+
+	checkSize : function () {
+
+		if($('.accordion').length > 0){
+
+			$(window).on('resize', function(){
+			// window.addEventListener("resize", function () {
+
+				size = window.getComputedStyle(document.body,':before').getPropertyValue('content');
+
+				if(size && size.indexOf("smallscreen") !=-1) {
+					console.log('create');
+				} else {
+					console.log('destroy');
+				}// if
+
+				//}, false);
+
+			});
+		}
 	}
 
 };

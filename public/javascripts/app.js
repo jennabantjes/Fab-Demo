@@ -1946,32 +1946,57 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 	init: function () {
 
-		this.activateAccordion();
+		this.checkSize();
 
-		this.closeAccordion();
+		this.triggerAccordion();
 
 	},
 
-	activateAccordion : function () {
-			$( ".accordion" ).accordion({
-			collapsible: true,
-			active: false
-		});
-	},
+		triggerAccordion : function () {
 
-	closeAccordion : function () {
+		var trigger = '.accordion-trigger',
+			content = 'accordion-content';
 
-		$('.popup-nav, #top-nav').hover( function () {
-			mouse_inside = true;
-		}, function () {
-			mouse_inside = false;
-		});
+		$(trigger).on('click',function(e) {
+			e.preventDefault();
+			console.log('clicked');
 
-		$('section, header').click( function() {
-			if (!mouse_inside) {
-					$('.accordion').accordion({active: '-1'});
+			if($(content).hasClass('is-open')) {
+
+				$(this).removeClass('is-open');
+				console.log('open');
+
 			}
-		});
+
+			else {
+
+				$(this).addClass('is-open');
+				console.log('closed');
+
+			} // if is-open
+
+		}); // click
+	},
+
+	checkSize : function () {
+
+		if($('.accordion').length > 0){
+
+			$(window).on('resize', function(){
+			// window.addEventListener("resize", function () {
+
+				size = window.getComputedStyle(document.body,':before').getPropertyValue('content');
+
+				if(size && size.indexOf("smallscreen") !=-1) {
+					console.log('create');
+				} else {
+					console.log('destroy');
+				}// if
+
+				//}, false);
+
+			});
+		}
 	}
 
 };;var Images = {
@@ -2047,25 +2072,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 };;var Window = {
 
-	init: function () {
 
-		this.resizeWindow();
-
-	},
-
-	resizeWindow : function(){
-
-		$(window).resize(function() {
-				if(this.resizeTO) clearTimeout(this.resizeTO);
-				this.resizeTO = setTimeout(function() {
-						$(this).trigger('resizeEnd');
-				}, 500);
-		});
-
-		$(window).bind('resizeEnd', function() {
-				location.reload();
-		});
-	}
 };;var mouse_inside = false;
 
 ;(function($){

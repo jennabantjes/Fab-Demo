@@ -915,20 +915,26 @@ html {
 
 /* line 7, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 body {
-  content: 'largescreen';
   font-family: "Helvetica Neue",Helvetica,Arial,Geneva,sans-serif;
   font-size: 14px;
   height: 100%;
   overflow: scroll;
 }
+/* line 13, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+body:before {
+  content: 'largescreen';
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
 @media screen and (max-width: 550px) {
-  /* line 7, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
-  body {
+  /* line 13, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+  body:before {
     content: 'smallscreen';
   }
 }
 
-/* line 19, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 25, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .page-wrapper {
   padding: 0 12px;
   position: relative;
@@ -936,7 +942,7 @@ body {
   height: 100%;
 }
 
-/* line 26, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 32, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .container {
   height: 100%;
   margin: 0 auto;
@@ -946,7 +952,7 @@ body {
   min-width: 320px;
 }
 
-/* line 35, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 41, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 section {
   clear: both;
   margin: 0 0 2rem 0;
@@ -954,22 +960,22 @@ section {
   overflow: hidden;
 }
 
-/* line 42, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 48, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 h1 {
   font-size: 24px;
 }
 
-/* line 54, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 60, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 a {
   color: #666;
   text-decoration: none;
 }
-/* line 58, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 64, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 63, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 69, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .meta {
   background: #f4f4f4;
   color: #666;
@@ -980,38 +986,38 @@ a:hover {
   width: 100%;
 }
 @media screen and (max-width: 550px) {
-  /* line 63, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+  /* line 69, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
   .meta {
     height: auto;
     font-size: inherit;
     text-align: center;
   }
 }
-/* line 78, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 84, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .meta a:hover {
   color: #333;
   text-decoration: none;
 }
-/* line 83, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 89, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .meta .icon-mail-1 {
   margin: 0 5px 0 10px;
 }
-/* line 87, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 93, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .meta .one-of-four {
   text-align: right;
 }
-/* line 91, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 97, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .meta .contact {
   text-align: right;
 }
 @media screen and (max-width: 550px) {
-  /* line 91, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+  /* line 97, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
   .meta .contact {
     text-align: center;
   }
 }
 
-/* line 100, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 106, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 header {
   background: white;
   display: block;
@@ -1020,49 +1026,49 @@ header {
   z-index: 101;
 }
 
-/* line 108, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 114, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 #logo {
   margin: 12px 15px 0 0;
 }
 
-/* line 112, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 118, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .cart {
   border-right: 1px solid #d5d5d5;
   padding-right: 12px;
 }
 
-/* line 117, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 123, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .login {
   margin-left: 12px;
 }
 
-/* line 121, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 127, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 #shop {
   margin-top: 24px;
   text-align: right;
 }
 @media screen and (max-width: 860px) {
-  /* line 121, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+  /* line 127, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
   #shop {
     float: right;
     margin-right: 20px;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 121, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+  /* line 127, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
   #shop {
     width: 51.5%;
   }
 }
 
-/* line 135, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 141, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 #rotator {
   margin: 12px 0;
   padding: 0;
   position: relative;
 }
 
-/* line 141, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 147, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .sidebar {
   background: #f4f4f4;
   color: #444;
@@ -1072,31 +1078,31 @@ header {
   margin-bottom: 0;
   text-transform: uppercase;
 }
-/* line 150, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 156, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .sidebar h2 {
   color: #444;
   font-weight: 600;
 }
-/* line 155, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 161, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .sidebar a {
   color: #999;
 }
-/* line 158, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 164, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .sidebar a:hover {
   color: #dd0017;
   text-decoration: none;
 }
-/* line 164, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 170, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .sidebar li {
   padding: 3px;
 }
-/* line 168, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 174, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .sidebar ul {
   border-bottom: 1px solid #d5d5d5;
   padding: 5px;
 }
 @media screen and (max-width: 900px) {
-  /* line 141, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+  /* line 147, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
   .sidebar {
     left: -9999px;
     position: absolute;
@@ -1104,52 +1110,52 @@ header {
   }
 }
 
-/* line 180, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 186, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 #image-rotator {
   height: 550px;
 }
 
-/* line 185, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 191, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .owl-carousel {
   border-bottom: 1px solid #d5d5d5;
 }
 
-/* line 189, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 195, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .owl-carousel .item img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* line 195, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 201, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .main-rotator {
   border-bottom: none;
   float: left;
   padding: 0;
 }
-/* line 200, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 206, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .main-rotator img {
   width: 100%;
 }
 @media screen and (max-width: 900px) {
-  /* line 204, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+  /* line 210, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
   .main-rotator.three-of-four {
     width: 100%;
   }
 }
 
-/* line 211, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 217, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .products {
   font-size: 20px;
   line-height: 3;
   padding: 1rem;
 }
-/* line 216, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 222, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .products a {
   color: #dd0017;
 }
 
-/* line 221, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 227, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .item-info {
   border-top: 1px solid #cfcfcf;
   line-height: 1.4;
@@ -1157,41 +1163,41 @@ header {
   min-height: 80px;
   padding: 1rem .6rem;
 }
-/* line 228, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 234, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .item-info:hover {
   background: #f7f7f7;
   border-color: #f7f7f7;
 }
-/* line 233, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 239, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .item-info span {
   width: 100%;
 }
 
-/* line 238, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 244, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .item {
   display: block;
   font-size: 12px;
   font-weight: 500;
 }
 
-/* line 244, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 250, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .vendor {
   display: block;
   font-weight: 300;
 }
-/* line 248, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 254, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .vendor a {
   font-weight: 500;
 }
 
-/* line 253, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 259, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .sale-price {
   display: block;
   font-size: 14px;
   font-weight: bold;
 }
 
-/* line 259, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 265, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .price {
   color: #999;
   display: block;
@@ -1199,7 +1205,7 @@ header {
   text-decoration: line-through;
 }
 
-/* line 266, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 272, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .policies div {
   background: #f2f2f2;
   color: black;
@@ -1209,24 +1215,24 @@ header {
   min-height: 115px;
   padding: 15px;
 }
-/* line 276, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 282, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .policies div:first-child:hover {
   background: #64d2f1;
 }
-/* line 281, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 287, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .policies div:hover {
   background: #e59ac2;
   color: white;
 }
-/* line 285, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 291, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .policies div:hover p {
   color: white;
 }
-/* line 291, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 297, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .policies div:last-child:hover {
   background: #ff5800;
 }
-/* line 296, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
+/* line 302, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
 .policies div p {
   color: #999;
   font-size: 12px;
