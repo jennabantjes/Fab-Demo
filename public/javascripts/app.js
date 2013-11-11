@@ -1950,32 +1950,41 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 		this.triggerAccordion();
 
+		this.closeAccordion();
+
 	},
 
-		triggerAccordion : function () {
+	triggerAccordion : function () {
 
 		var trigger = '.accordion-trigger',
 			content = 'accordion-content';
 
 		$(trigger).on('click',function(e) {
 			e.preventDefault();
-			console.log('clicked');
+			// console.log('clicked');
 
-			if($(content).hasClass('is-open')) {
+			$(this).parent().attr('id');
+
+			if($(this).hasClass('is-open')) {
 
 				$(this).removeClass('is-open');
 				console.log('open');
-
 			}
 
 			else {
-
+				$('.accordion-trigger').removeClass('is-open');
 				$(this).addClass('is-open');
 				console.log('closed');
 
 			} // if is-open
 
 		}); // click
+	},
+
+	closeAccordion : function () {
+		$('#top-nav').mouseleave(function() {
+			$('.accordion-trigger').removeClass('is-open');
+		});
 	},
 
 	checkSize : function () {
