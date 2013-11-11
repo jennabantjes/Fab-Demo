@@ -17,6 +17,7 @@
         }
 
         @media screen and (max-width: 550px) {
+            background: white;
             left: -999px;
             opacity: 0;
             position: absolute;
@@ -54,11 +55,6 @@
                     display: block;
                     float: right;
                 }
-            }
-
-            div {
-                background: white;
-                padding: 8px;
             }
         }
      }

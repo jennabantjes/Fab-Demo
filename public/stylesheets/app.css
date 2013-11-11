@@ -1383,6 +1383,7 @@ select, input, textarea, button {
 @media screen and (max-width: 550px) {
   /* line 10, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
   #top-nav > ul {
+    background: white;
     left: -999px;
     opacity: 0;
     position: absolute;
@@ -1390,22 +1391,22 @@ select, input, textarea, button {
     width: 95%;
   }
 }
-/* line 27, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
+/* line 28, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
 #top-nav > ul li {
   display: inline-block;
 }
 @media screen and (max-width: 550px) {
-  /* line 27, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
+  /* line 28, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
   #top-nav > ul li {
     display: block;
   }
 }
-/* line 35, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
+/* line 36, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
 #top-nav > ul h3 {
   cursor: pointer;
   padding: 0 16px;
 }
-/* line 39, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
+/* line 40, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
 #top-nav > ul h3 span.icon-down-dir {
   display: none;
 }
@@ -1414,25 +1415,20 @@ select, input, textarea, button {
   #top-nav > ul {
     box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.4);
   }
-  /* line 47, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
+  /* line 48, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
   #top-nav > ul h3 {
     background: white;
     border: 1px solid #d5d5d5;
     padding: 8px;
     width: 100%;
   }
-  /* line 53, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
+  /* line 54, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
   #top-nav > ul h3 span.icon-down-dir {
     display: block;
     float: right;
   }
-  /* line 59, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
-  #top-nav > ul div {
-    background: white;
-    padding: 8px;
-  }
 }
-/* line 66, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
+/* line 62, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_top-nav.scss */
 #top-nav .sale a {
   color: #dd0017;
   font-weight: 500;
@@ -1445,15 +1441,17 @@ select, input, textarea, button {
   -ms-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
+  height: auto;
   opacity: 1;
   z-index: 999;
 }
 
-/* line 7, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 8, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav {
   background: white;
   border: 1px solid #b6b8b7;
   box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.4);
+  height: 0;
   left: 0;
   opacity: 0;
   padding: 12px 11px 12px 0;
@@ -1462,19 +1460,20 @@ select, input, textarea, button {
   width: 100%;
 }
 @media screen and (max-width: 550px) {
-  /* line 7, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+  /* line 8, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
   .popup-nav {
     box-shadow: none;
     overflow: scroll;
+    padding: 0;
     position: relative;
     top: 0;
   }
-  /* line 24, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+  /* line 27, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
   .popup-nav:before {
     display: none;
   }
 }
-/* line 29, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 32, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav:before {
   color: white;
   content: '\e809';
@@ -1485,48 +1484,48 @@ select, input, textarea, button {
   text-shadow: 0px -2px 0px #b6b8b7;
   top: -19px;
 }
-/* line 40, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 43, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav .one-of-four {
   margin: 0;
 }
 @media screen and (max-width: 800px) {
-  /* line 43, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+  /* line 46, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
   .popup-nav .one-of-four:nth-child(2) {
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 43, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+  /* line 46, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
   .popup-nav .one-of-four:nth-child(2) {
     margin-bottom: 0;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 53, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+  /* line 56, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
   .popup-nav .one-of-four:nth-child(3), .popup-nav .one-of-four:first-child {
     border-right: 1px solid #b6b8b7;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 53, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+  /* line 56, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
   .popup-nav .one-of-four:nth-child(3), .popup-nav .one-of-four:first-child {
     border-right: 0;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 40, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+  /* line 43, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
   .popup-nav .one-of-four {
     display: block;
     width: 50%;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 40, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+  /* line 43, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
   .popup-nav .one-of-four {
     width: 100%;
   }
 }
-/* line 73, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 76, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav .shop-all {
   float: right;
   font-size: 12px;
@@ -1536,60 +1535,60 @@ select, input, textarea, button {
   text-decoration: underline;
   text-align: right;
 }
-/* line 82, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 85, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav .shop-all:hover {
   color: #333;
   text-decoration: underline;
 }
-/* line 88, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 91, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav .icon-right-open-big {
   color: #dd0017;
 }
-/* line 92, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 95, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav .menu-image {
   padding-left: 12px;
   width: 29%;
 }
 @media screen and (max-width: 800px) {
-  /* line 92, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+  /* line 95, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
   .popup-nav .menu-image {
     padding: 0 12px;
     width: 50%;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 92, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+  /* line 95, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
   .popup-nav .menu-image {
     padding-top: 12px;
     width: 100%;
   }
 }
-/* line 106, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 109, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav .menu-image img {
   margin-bottom: 12px;
   width: 100%;
 }
-/* line 112, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 115, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav ul {
   border-right: 1px solid #b6b8b7;
   padding: 6px 0;
 }
 @media screen and (max-width: 800px) {
-  /* line 112, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+  /* line 115, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
   .popup-nav ul {
     border-right: none;
     border-bottom: 1px solid #b6b8b7;
   }
 }
-/* line 122, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 125, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav .border-bottom {
   border-bottom: 1px solid #b6b8b7;
 }
-/* line 126, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 129, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav a:hover {
   text-decoration: none;
 }
-/* line 130, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 133, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav li {
   color: #333;
   font-size: 12px;
@@ -1598,18 +1597,18 @@ select, input, textarea, button {
   padding: 6px 0 6px 14px;
   width: 100%;
 }
-/* line 138, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 141, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav li:hover {
   background: #f7f7f7;
   color: #666;
 }
-/* line 143, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 146, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav li.category {
   color: #666;
   font-size: 14px;
   font-weight: 500;
 }
-/* line 148, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
+/* line 151, /Users/jennabantjes/sites/fab-demo-v2/app/sass/components/nav/_popup-nav.scss */
 .popup-nav li.category:hover {
   color: #000;
 }

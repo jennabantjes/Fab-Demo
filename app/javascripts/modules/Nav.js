@@ -28,7 +28,7 @@ var Nav = {
 			$('#top-nav > ul').toggleClass('visible');
 		});
 
-		$('body').on('click', 'header, section, #top-nav a', function(){
+		$('body').on('click', 'header, section', function(){
 			$('#top-nav > ul').removeClass('visible');
 		});
 	},
