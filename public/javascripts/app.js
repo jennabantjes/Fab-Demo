@@ -1946,8 +1946,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 	init: function () {
 
-		this.checkSize();
-
 		this.triggerAccordion();
 
 		this.closeAccordion();
@@ -1982,29 +1980,31 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 	},
 
 	closeAccordion : function () {
-		$('#top-nav').mouseleave(function() {
-			$('.accordion-trigger').removeClass('is-open');
-		});
-	},
-
-	checkSize : function () {
 
 		if($('.accordion').length > 0){
 
 			$(window).on('resize', function(){
 			// window.addEventListener("resize", function () {
 
+				console.log('resize');
+
 				size = window.getComputedStyle(document.body,':before').getPropertyValue('content');
 
-				if(size && size.indexOf("smallscreen") !=-1) {
-					console.log('create');
-				} else {
-					console.log('destroy');
-				}// if
+				if(size && size.indexOf("largescreen") !=-1) {
+
+					$('#top-nav').mouseleave(function() {
+						$('.accordion-trigger').removeClass('is-open');
+					});
+
+				}
+
+				else {
+					$('#top-nav').unbind();
+				}
 
 				//}, false);
 
-			});
+			}).resize();
 		}
 	}
 

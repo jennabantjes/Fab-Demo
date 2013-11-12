@@ -2,8 +2,6 @@ var Accordion = {
 
 	init: function () {
 
-		this.checkSize();
-
 		this.triggerAccordion();
 
 		this.closeAccordion();
@@ -38,29 +36,31 @@ var Accordion = {
 	},
 
 	closeAccordion : function () {
-		$('#top-nav').mouseleave(function() {
-			$('.accordion-trigger').removeClass('is-open');
-		});
-	},
-
-	checkSize : function () {
 
 		if($('.accordion').length > 0){
 
 			$(window).on('resize', function(){
 			// window.addEventListener("resize", function () {
 
+				console.log('resize');
+
 				size = window.getComputedStyle(document.body,':before').getPropertyValue('content');
 
-				if(size && size.indexOf("smallscreen") !=-1) {
-					console.log('create');
-				} else {
-					console.log('destroy');
-				}// if
+				if(size && size.indexOf("largescreen") !=-1) {
+
+					$('#top-nav').mouseleave(function() {
+						$('.accordion-trigger').removeClass('is-open');
+					});
+
+				}
+
+				else {
+					$('#top-nav').unbind();
+				}
 
 				//}, false);
 
-			});
+			}).resize();
 		}
 	}
 
