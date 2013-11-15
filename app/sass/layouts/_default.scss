@@ -214,6 +214,71 @@ header {
     }
 }
 
+#graphics {
+    height: 11rem;
+    padding: 0;
+
+    div {
+        height: 100%;
+        text-indent: -9999px;
+
+        @media screen and (max-width: 800px) {
+            width: 22%;
+
+            &:first-child {
+                width: 0;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            width: 44%;
+        }
+    }
+}
+
+#free-shipping-graphic {
+    background: url('../images/sprite.png') no-repeat 99% 2rem;
+    
+    &:hover {
+        background: url('../images/sprite.png') no-repeat 99% 79%;
+    }
+}
+
+#home-graphic {
+    background: url('../images/sprite.png') no-repeat 2% 100%;
+
+    &:hover {
+        background: url('../images/sprite.png') no-repeat 2% 0;
+        background-color: $blue;
+    }
+}
+
+#women-graphic {
+    background: url('../images/sprite.png') no-repeat 27% 100%;
+
+    &:hover {
+        background: url('../images/sprite.png') no-repeat 27% 0;
+        background-color: $pink;
+    }
+}
+
+#men-graphic {
+    background: url('../images/sprite.png') no-repeat 51% 100%;
+
+    &:hover {
+        background: url('../images/sprite.png') no-repeat 51% 0;
+    }
+}
+
+#fun-graphic {
+    background: url('../images/sprite.png') no-repeat 74% 100%;
+
+    &:hover {
+        background: url('../images/sprite.png') no-repeat 74% 0;
+        background-color: $orange;
+    }
+}
+
 .products {
     font-size: 20px;
     line-height: 3;
