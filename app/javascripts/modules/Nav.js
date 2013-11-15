@@ -44,7 +44,7 @@ var Nav = {
 
 				console.log('sticky');
 
-				$('.sticky-area').waypoint(function(direction) {
+				$('.sticky-area').waypoint(function(up) {
 					$(this).toggleClass('sticky');
 					$('.meta').toggleClass('nav-fixed');
 				});

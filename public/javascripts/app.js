@@ -2082,7 +2082,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 				console.log('sticky');
 
-				$('.sticky-area').waypoint(function(direction) {
+				$('.sticky-area').waypoint(function(up) {
 					$(this).toggleClass('sticky');
 					$('.meta').toggleClass('nav-fixed');
 				});

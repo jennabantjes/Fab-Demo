@@ -214,7 +214,7 @@ header {
     }
 }
 
-#graphics {
+#graphics, #sale-nav {
     height: 11rem;
     padding: 0;
 
@@ -238,7 +238,7 @@ header {
 
 #free-shipping-graphic {
     background: url('../images/sprite.png') no-repeat 99% 2rem;
-    
+
     &:hover {
         background: url('../images/sprite.png') no-repeat 99% 79%;
     }
