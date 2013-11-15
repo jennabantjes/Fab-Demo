@@ -35,10 +35,31 @@ var Nav = {
 
 	stickNav : function () {
 
-		$('.sticky-area').waypoint(function(direction) {
-			$(this).toggleClass('sticky');
-			$('.meta').toggleClass('nav-fixed');
-		});
+		$(window).on('resize', function(){
+		// window.addEventListener("resize", function () {
+
+			size = window.getComputedStyle(document.body,':before').getPropertyValue('content');
+
+			if(size && size.indexOf("largescreen") !=-1) {
+
+				console.log('sticky');
+
+				$('.sticky-area').waypoint(function(direction) {
+					$(this).toggleClass('sticky');
+					$('.meta').toggleClass('nav-fixed');
+				});
+
+			}
+
+			else {
+				console.log('unsticky');
+				$('.sticky-area').unbind();
+			}
+
+			//}, false);
+
+		}).resize();
+
 	}
 
 };
