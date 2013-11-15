@@ -9,12 +9,6 @@
     position: absolute;
     top: 20px;
     z-index: 111;
-
-    @media screen and (max-width: 860px) {
-        &.selected {
-            display: none;
-        }
-    }
 }
 
 input[type="search"] {
@@ -30,12 +24,11 @@ input[type="search"] {
 
     @media screen and (max-width: 860px) {
         padding: 0 0 0 30px;
-        width: 100px;
+        width: 40px;
 
         &.selected {
-            padding: 0 5px;
             @include transition(width 0.2s ease);
-            width: 200px;
+            width: 180px;
         }
     }
 }

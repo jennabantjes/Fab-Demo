@@ -1057,7 +1057,7 @@ header {
 @media screen and (max-width: 550px) {
   /* line 127, /Users/apprentice5/Sites/Fab-Demo/app/sass/layouts/_default.scss */
   #shop {
-    width: 51.5%;
+    width: 100%;
   }
 }
 
@@ -1368,14 +1368,8 @@ header {
   top: 20px;
   z-index: 111;
 }
-@media screen and (max-width: 860px) {
-  /* line 14, /Users/apprentice5/Sites/Fab-Demo/app/sass/components/_inputs.scss */
-  .icon-search.selected {
-    display: none;
-  }
-}
 
-/* line 20, /Users/apprentice5/Sites/Fab-Demo/app/sass/components/_inputs.scss */
+/* line 14, /Users/apprentice5/Sites/Fab-Demo/app/sass/components/_inputs.scss */
 input[type="search"] {
   border-radius: 2px;
   background: white;
@@ -1388,31 +1382,30 @@ input[type="search"] {
   margin-top: 12px;
 }
 @media screen and (max-width: 860px) {
-  /* line 20, /Users/apprentice5/Sites/Fab-Demo/app/sass/components/_inputs.scss */
+  /* line 14, /Users/apprentice5/Sites/Fab-Demo/app/sass/components/_inputs.scss */
   input[type="search"] {
     padding: 0 0 0 30px;
-    width: 100px;
+    width: 40px;
   }
-  /* line 35, /Users/apprentice5/Sites/Fab-Demo/app/sass/components/_inputs.scss */
+  /* line 29, /Users/apprentice5/Sites/Fab-Demo/app/sass/components/_inputs.scss */
   input[type="search"].selected {
-    padding: 0 5px;
     -webkit-transition: width 0.2s ease;
     -moz-transition: width 0.2s ease;
     -ms-transition: width 0.2s ease;
     -o-transition: width 0.2s ease;
     transition: width 0.2s ease;
-    width: 200px;
+    width: 180px;
   }
 }
 
-/* line 43, /Users/apprentice5/Sites/Fab-Demo/app/sass/components/_inputs.scss */
+/* line 36, /Users/apprentice5/Sites/Fab-Demo/app/sass/components/_inputs.scss */
 select, input, textarea, button {
   font: 99% "Helvetica Neue",Helvetica,Arial,sans-serif;
   outline: 0;
 }
 
 @media screen and (max-width: 860px) {
-  /* line 48, /Users/apprentice5/Sites/Fab-Demo/app/sass/components/_inputs.scss */
+  /* line 41, /Users/apprentice5/Sites/Fab-Demo/app/sass/components/_inputs.scss */
   .search {
     float: right;
   }

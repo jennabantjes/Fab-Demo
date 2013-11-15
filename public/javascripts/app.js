@@ -2058,6 +2058,22 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 			$(this).addClass("selected");
 			$('.icon-search').addClass('selected');
 		});
+
+		$(window).on('resize', function(){
+		// window.addEventListener("resize", function () {
+
+			size = window.getComputedStyle(document.body,':before').getPropertyValue('content');
+
+			if(size && size.indexOf("smallscreen") !=-1) {
+
+				$('#search').attr("placeholder","Search Fab");
+				console.log('working');
+
+			}
+
+			//}, false);
+
+		}).resize();
 	},
 
 	toggleMenu : function () {
@@ -2080,8 +2096,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 			if(size && size.indexOf("largescreen") !=-1) {
 
-				console.log('sticky');
-
 				$('.sticky-area').waypoint(function(up) {
 					$(this).toggleClass('sticky');
 					$('.meta').toggleClass('nav-fixed');
@@ -2090,7 +2104,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 			}
 
 			else {
-				console.log('unsticky');
 				$('.sticky-area').unbind();
 			}
 
