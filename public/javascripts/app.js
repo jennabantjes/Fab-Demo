@@ -2071,7 +2071,16 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 			}
 
-			//}, false);
+			else if(size && size.indexOf("midscreen") !=-1) {
+
+				$('#search').attr("placeholder","Search Fab");
+				console.log('working');
+
+			}
+
+			else if(size && size.indexOf("largescreen") !=-1){
+				$('#search').attr("placeholder", "Search Everyday Designs for Home, Fashion and Gifts");
+			}//}, false
 
 		}).resize();
 	},
@@ -2095,6 +2104,16 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 			size = window.getComputedStyle(document.body,':before').getPropertyValue('content');
 
 			if(size && size.indexOf("largescreen") !=-1) {
+
+				$('.sticky-area').waypoint(function(up) {
+					$(this).toggleClass('sticky');
+					$('.meta').toggleClass('nav-fixed');
+				});
+
+			}
+
+
+			else if(size && size.indexOf("midscreen") !=-1) {
 
 				$('.sticky-area').waypoint(function(up) {
 					$(this).toggleClass('sticky');

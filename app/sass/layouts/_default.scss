@@ -16,6 +16,10 @@ body {
             position: absolute;
             top: -9999px;
 
+        @media screen and (max-width: 860px) {
+            content: 'midscreen';
+        }
+
         @media screen and (max-width: 550px) {
             content: 'smallscreen';
         }
