@@ -23,11 +23,13 @@ input[type="search"] {
     margin-top: 12px;
 
     @media screen and (max-width: 860px) {
+        color: white;
         padding: 0 0 0 30px;
         width: 40px;
 
         &.selected {
             @include transition(width 0.2s ease);
+            color: #666;
             width: 180px;
         }
     }

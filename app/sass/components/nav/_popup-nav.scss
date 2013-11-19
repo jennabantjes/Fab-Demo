@@ -1,5 +1,4 @@
 .is-open + div {
-    //@include transition(opacity 0.2s ease-in-out);
     height: auto;
     left: 0;
     opacity: 1;
@@ -7,6 +6,7 @@
     z-index: 999;
 
     @media screen and (max-width: 550px) {
+        @include transition (opacity .4s ease);
         top: 0;
     }
 }
@@ -100,6 +100,7 @@
     }
 
     .menu-image {
+        margin-bottom: 2rem;
         padding-left: 12px;
         width: 29%;
 
