@@ -903,7 +903,7 @@ if ( typeof Object.create !== "function" ) {
 
 				var position = $(this).position();
 				locals.relativePos = position.left;
-				
+
 				locals.offsetX = getTouches(event).x - position.left;
 				locals.offsetY = getTouches(event).y - position.top;
 
@@ -918,12 +918,12 @@ if ( typeof Object.create !== "function" ) {
 
 				base.newPosX = getTouches(event).x- locals.offsetX;
 				base.newPosY = getTouches(event).y - locals.offsetY;
-				base.newRelativeX = base.newPosX - locals.relativePos;	
+				base.newRelativeX = base.newPosX - locals.relativePos;
 
 				if (typeof base.options.startDragging === "function" && locals.dragging !== true && base.newRelativeX !== 0) {
 					locals.dragging = true;
 					base.options.startDragging.apply(this);
-				}			
+				}
 
 				if(base.newRelativeX > 8 || base.newRelativeX < -8 && base.browser.isTouch === true){
 					event.preventDefault ? event.preventDefault() : event.returnValue = false;
@@ -976,13 +976,13 @@ if ( typeof Object.create !== "function" ) {
 				}
 				swapEvents("off");
 			}
-			base.$elem.on(base.ev_types["start"], ".owl-wrapper", dragStart); 
+			base.$elem.on(base.ev_types["start"], ".owl-wrapper", dragStart);
 		},
 
 		getNewPosition : function(){
 			var base = this,
 				newPosition;
-			
+
 			var newPosition = base.improveClosest();
 			if(newPosition>base.maximumItem){
 				base.currentItem = base.maximumItem;
@@ -1003,7 +1003,7 @@ if ( typeof Object.create !== "function" ) {
 				if( goal - (base.itemWidth/20) > array[i+1] && goal - (base.itemWidth/20)< v && base.moveDirection() === "left") {
 					closest = v;
 					base.currentItem = i;
-				} 
+				}
 				else if (goal + (base.itemWidth/20) < v && goal + (base.itemWidth/20) > array[i+1] && base.moveDirection() === "right"){
 					closest = array[i+1];
 					base.currentItem = i+1;
@@ -1049,7 +1049,7 @@ if ( typeof Object.create !== "function" ) {
 				base.jumpTo(item)
 			});
 		},
-		
+
 		stopOnHover : function(){
 			var base = this;
 			if(base.options.stopOnHover === true && base.browser.isTouch !== true && base.options.autoPlay !== false){
@@ -1084,7 +1084,7 @@ if ( typeof Object.create !== "function" ) {
 				if( typeof $lazyImg.data("src") !== "string"){
 					$item.data("owl-loaded","loaded");
 					continue;
-				}				
+				}
 				if($item.data("owl-loaded") === undefined){
 					$lazyImg.hide();
 					$item.addClass("loading").data("owl-loaded","checked");
@@ -1110,7 +1110,7 @@ if ( typeof Object.create !== "function" ) {
 				iterations += 1;
 				if (base.completeImg( $lazyImg.get(0) )) {
 					showImage();
-				} else if(iterations <= 100){//if image loads in less than 10 seconds 
+				} else if(iterations <= 100){//if image loads in less than 10 seconds
 					setTimeout(checkLazyImage,100);
 				} else {
 					showImage();
@@ -1137,7 +1137,7 @@ if ( typeof Object.create !== "function" ) {
 				iterations += 1;
 				if ( base.completeImg($currentimg.get(0)) ) {
 					addHeight();
-				} else if(iterations <= 100){ //if image loads in less than 10 seconds 
+				} else if(iterations <= 100){ //if image loads in less than 10 seconds
 					setTimeout(checkImage,100);
 				} else {
 					base.wrapperOuter.css("height", ""); //Else remove height attribute
@@ -1322,7 +1322,7 @@ if ( typeof Object.create !== "function" ) {
 				position;
 
 			if(base.$elem.children().length === 0){return false}
-			
+
 			if(targetPosition === undefined || targetPosition === -1){
 				position = -1;
 			} else {
@@ -1404,11 +1404,11 @@ if ( typeof Object.create !== "function" ) {
 		afterMove: false,
 		afterAction : false,
 		startDragging : false
-		
+
 	};
 })( jQuery, window, document );;/*
  *	jQuery OwlCarousel v1.27
- *  
+ *
  *	Copyright (c) 2013 Bartosz Wojciechowski
  *	http://www.owlgraphic.com/owlcarousel
  *
@@ -2087,7 +2087,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 	toggleMenu : function () {
 
-		$('body').on('click', '.icon-menu-1', function() {
+		$('body').on('click', '#menu-link', function() {
 			$('#top-nav > ul').toggleClass('visible');
 		});
 

@@ -140,7 +140,7 @@
 }
 
 /* '' */
-/* 
+/*
  * 	Core Owl Carousel CSS File
  *	v1.24
  */
@@ -608,7 +608,7 @@
 }
 
 /*
-* 	Owl Carousel Owl Demo Theme 
+* 	Owl Carousel Owl Demo Theme
 *	v1.24
 */
 /* line 6, /Users/apprentice5/Sites/fab-demo/app/sass/vendor/owl.theme.scss */
@@ -1427,7 +1427,7 @@ select, input, textarea, button {
   /* line 1, /Users/apprentice5/Sites/fab-demo/app/sass/components/_icons.scss */
   .icon-menu-1 {
     display: block;
-    line-height: 1.8;
+    font-size: 20px;
   }
 }
 /* line 9, /Users/apprentice5/Sites/fab-demo/app/sass/components/_icons.scss */
