@@ -1063,6 +1063,7 @@ header {
 @media screen and (max-width: 550px) {
   /* line 131, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
   #shop {
+    font-size: 18px;
     width: 100%;
   }
 }
@@ -1155,6 +1156,21 @@ header {
   height: 11rem;
   padding: 0;
 }
+
+@media screen and (max-width: 550px) {
+  #graphics {
+      height: 50%;
+  }
+
+  #sale-nav {
+    height: 23rem;
+  }
+}
+
+#sale-nav.inactive{
+  height: 0;
+  padding: 0;
+}
 /* line 225, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
 #graphics div, #sale-nav div {
   height: 100%;
@@ -1166,62 +1182,64 @@ header {
     width: 22%;
   }
   /* line 232, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
-  #graphics div:first-child, #sale-nav div:first-child {
+  #graphics div:first-child {
     width: 0;
   }
 }
 @media screen and (max-width: 550px) {
   /* line 225, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
   #graphics div, #sale-nav div {
+    height: 50%;
     width: 44%;
   }
 }
 
 /* line 243, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
 #free-shipping-graphic {
-  background: url("../images/sprite.png") no-repeat 99% 2rem;
+  background: url("../images/shipping.png") no-repeat 50% -25%;
 }
 /* line 246, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
 #free-shipping-graphic:hover {
-  background: url("../images/sprite.png") no-repeat 99% 79%;
+  background: url("../images/shipping.png") no-repeat 50% 71%;
 }
 
 /* line 251, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
 #home-graphic {
-  background: url("../images/sprite.png") no-repeat 2% 100%;
+  background: url("../images/home.png") no-repeat 50% 96%;
 }
 /* line 254, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
 #home-graphic:hover {
-  background: url("../images/sprite.png") no-repeat 2% 0;
   background-color: #006c9f;
+  background-position: 50% 0;
 }
 
 /* line 260, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
 #women-graphic {
-  background: url("../images/sprite.png") no-repeat 27% 100%;
+  background: url("../images/women.png") no-repeat 50% 96%;
 }
 /* line 263, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
 #women-graphic:hover {
-  background: url("../images/sprite.png") no-repeat 27% 0;
+  background: url("../images/women.png") no-repeat 50% 0;
   background-color: #f3cbb6;
 }
 
 /* line 269, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
 #men-graphic {
-  background: url("../images/sprite.png") no-repeat 51% 100%;
+  background: url("../images/men.png") no-repeat 50% 96%;
 }
 /* line 272, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
 #men-graphic:hover {
-  background: url("../images/sprite.png") no-repeat 51% 0;
+  background: url("../images/men.png") no-repeat 50% 0;
+  background-color: #00995a;
 }
 
 /* line 277, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
 #fun-graphic {
-  background: url("../images/sprite.png") no-repeat 74% 100%;
+  background: url("../images/fun.png") no-repeat 50% 96%;
 }
 /* line 280, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
 #fun-graphic:hover {
-  background: url("../images/sprite.png") no-repeat 74% 0;
+  background: url("../images/fun.png") no-repeat 50% 0;
   background-color: #ff9000;
 }
 
@@ -1697,10 +1715,4 @@ select, input, textarea, button {
 /* line 159, /Users/apprentice5/Sites/fab-demo/app/sass/components/nav/_popup-nav.scss */
 .popup-nav li.category:hover {
   color: #000;
-}
-
-/* line 166, /Users/apprentice5/Sites/fab-demo/app/sass/components/nav/_popup-nav.scss */
-#sale-nav {
-  height: 13rem;
-  padding: 1rem;
 }

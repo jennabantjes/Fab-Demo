@@ -2046,6 +2046,16 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 		this.stickNav();
 
+		this.adjustHeight();
+
+	},
+
+	adjustHeight : function () {
+		$('#sale-nav').addClass('inactive');
+
+		$('body').on('click', '#sale-nav-trigger', function () {
+			$('#sale-nav').toggleClass('inactive');
+		});
 	},
 
 	showNavIcon : function () {
