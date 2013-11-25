@@ -1063,6 +1063,7 @@ header {
 @media screen and (max-width: 550px) {
   /* line 131, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
   #shop {
+    font-size: 18px;
     width: 100%;
   }
 }
@@ -1155,6 +1156,11 @@ header {
   height: 11rem;
   padding: 0;
 }
+
+#sale-nav .inactive {
+  height: 0;
+  padding: 0;
+}
 /* line 225, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
 #graphics div, #sale-nav div {
   height: 100%;
@@ -1166,7 +1172,7 @@ header {
     width: 22%;
   }
   /* line 232, /Users/apprentice5/Sites/fab-demo/app/sass/layouts/_default.scss */
-  #graphics div:first-child, #sale-nav div:first-child {
+  #graphics div:first-child {
     width: 0;
   }
 }
@@ -1697,10 +1703,4 @@ select, input, textarea, button {
 /* line 159, /Users/apprentice5/Sites/fab-demo/app/sass/components/nav/_popup-nav.scss */
 .popup-nav li.category:hover {
   color: #000;
-}
-
-/* line 166, /Users/apprentice5/Sites/fab-demo/app/sass/components/nav/_popup-nav.scss */
-#sale-nav {
-  height: 13rem;
-  padding: 1rem;
 }
