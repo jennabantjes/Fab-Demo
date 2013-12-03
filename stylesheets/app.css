@@ -1159,7 +1159,7 @@ header {
 
 @media screen and (max-width: 550px) {
   #graphics {
-      height: 49%;
+      height: 20rem;
   }
 
   #sale-nav {
