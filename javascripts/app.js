@@ -2104,6 +2104,11 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 		$('body').on('click', 'header, section', function(){
 			$('#top-nav > ul').removeClass('visible');
 		});
+
+		$('body').on('click', '.popup-nav ul a', function(e) {
+			e.preventDefault();
+			$('#top-nav > ul').removeClass('visible');
+		});
 	},
 
 	stickNav : function () {
