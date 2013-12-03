@@ -1159,7 +1159,7 @@ header {
 
 @media screen and (max-width: 550px) {
   #graphics {
-      height: 50%;
+      height: 49%;
   }
 
   #sale-nav {
@@ -1409,7 +1409,7 @@ input[type="search"] {
   /* line 14, /Users/apprentice5/Sites/fab-demo/app/sass/components/_inputs.scss */
   input[type="search"] {
     color: white;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 100px;
     width: 40px;
   }
   /* line 30, /Users/apprentice5/Sites/fab-demo/app/sass/components/_inputs.scss */
