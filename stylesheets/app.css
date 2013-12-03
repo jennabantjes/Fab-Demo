@@ -1420,7 +1420,8 @@ input[type="search"] {
     -o-transition: width 0.2s ease;
     transition: width 0.2s ease;
     color: #666;
-    width: 180px;
+    padding: 0 0 0 30px;
+    width: 160px;
   }
 }
 
